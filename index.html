@@ -1,0 +1,274 @@
+<!doctype html>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Big Bazar</title>
+		<script type="text/javascript">
+			function getPrice(grocery){
+				if(grocery=="BasmatiRice"){
+					let v=document.getElementById("BasmatiRice").value;
+					let price=v*459;
+					document.getElementById("Basmati").innerHTML="Total Price ="+price;
+				}
+				if(grocery=="Biscuits"){
+					let v=document.getElementById("Biscuits").value;
+					let price=v*150;
+					document.getElementById("Biscuit").innerHTML="Total Price ="+price;
+				}
+				if(grocery=="Buckets and Mugs"){
+					let v=document.getElementById("Buckets and Mugs").value;
+					let price=v*300;
+					document.getElementById("Buckets").innerHTML="Total Price ="+price;
+				}
+				if(grocery=="Coffee"){
+					let v=document.getElementById("Coffee").value;
+					let price=v*180;
+					document.getElementById("Coffeee").innerHTML="Total Price ="+price;
+				}
+				if(grocery=="Dinner Set"){
+					let v=document.getElementById("Dinner Set").value;
+					let price=v*1299;
+					document.getElementById("Set").innerHTML="Total Price ="+price;
+				}
+				if(grocery=="Dreamery"){
+					let v=document.getElementById("Dreamery").value;
+					let price=v*250;
+					document.getElementById("Dreameryy").innerHTML="Total Price ="+price;
+				}
+				if(grocery=="Foldable Bag"){
+					let v=document.getElementById("Foldable Bag").value;
+					let price=v*69;
+					document.getElementById("Bag").innerHTML="Total Price ="+price;
+				}
+				if(grocery=="Glass Lunch Pack"){
+					let v=document.getElementById("Glass Lunch Pack").value;
+					let price=v*599;
+					document.getElementById("Lunch Pack").innerHTML="Total Price ="+price;
+				}
+				if(grocery=="Hair Care"){
+					let v=document.getElementById("Hair Care").value;
+					let price=v*350;
+					document.getElementById("Hair").innerHTML="Total Price ="+price;
+				}
+				if(grocery=="Insect Repellent"){
+					let v=document.getElementById("Insect Repellent").value;
+					let price=v*150;
+					document.getElementById("Insect").innerHTML="Total Price ="+price;
+				}
+				if(grocery=="Ketchup and Sauces"){
+					let v=document.getElementById("Ketchup and Sauces").value;
+					let price=v*200;
+					document.getElementById("Ketchup").innerHTML="Total Price ="+price;
+				}
+				if(grocery=="N95 Mask"){
+					let v=document.getElementById("N95 Mask").value;
+					let price=v*33;
+					document.getElementById("Mask").innerHTML="Total Price ="+price;
+				}
+				if(grocery=="Saffola Gold Oil"){
+					let v=document.getElementById("Saffola Gold Oil").value;
+					let price=v*1134;
+					document.getElementById("Saffola Gold").innerHTML="Total Price ="+price;
+				}
+				if(grocery=="Single Bedsheet"){
+					let v=document.getElementById("Single Bedsheet").value;
+					let price=v*299;
+					document.getElementById("Bedsheet").innerHTML="Total Price ="+price;
+				}
+				if(grocery=="Table Mats and Cover"){
+					let v=document.getElementById("Table Mats and Cover").value;
+					let price=v*1000;
+					document.getElementById("Table Mats").innerHTML="Total Price ="+price;
+				}
+				if(grocery=="Termoware"){
+					let v=document.getElementById("Termoware").value;
+					let price=v*129;
+					document.getElementById("Termo ware").innerHTML="Total Price ="+price;
+				}
+				if(grocery=="Terra Chips"){
+					let v=document.getElementById("Terra Chips").value;
+					let price=v*150;
+					document.getElementById("Chips").innerHTML="Total Price ="+price;
+				}
+				if(grocery=="Toys"){
+					let v=document.getElementById("Toys").value;
+					let price=v*500;
+					document.getElementById("Toy").innerHTML="Total Price ="+price;
+				}
+				if(grocery=="Utensil Cleaner"){
+					let v=document.getElementById("Utensil Cleaner").value;
+					let price=v*450;
+					document.getElementById("Cleaner").innerHTML="Total Price ="+price;
+				}
+				if(grocery=="Whole Spices"){
+					let v=document.getElementById("Whole Spices").value;
+					let price=v*220;
+					document.getElementById("Spices").innerHTML="Total Price ="+price;
+					
+				}
+			}
+		</script>	
+	</head>
+	<body>
+		<header style="color: black;background-color: whitesmoke;"><h1 style="margin-left: 700px;">Big Bazar</h1>
+		</header>
+		<style>
+			td{
+				width: 180px;
+			}
+			img{
+				width: 296px;
+			}
+			.glass img{
+				width: 296px;
+				height: 200px;
+			}
+			button{
+				width: 296px;
+				height: 35px;
+				border-radius: 10px;
+				background-color: whitesmoke;
+
+			}
+			
+		</style>
+		<table>
+			<tr class="table">
+				<td>
+					<img src="BasmatiRice.jpg">
+					<input type="number" id="BasmatiRice" placeholder="Enter Quantity"><br>
+					<button onclick="getPrice('BasmatiRice')"><b>View Price</b></button>
+					<h4 id="Basmati"></h4>
+				</td>
+				<td>
+					<img src="Biscuits.jpg">
+					<input type="number" id="Biscuits" placeholder="Enter Quantity"><br>
+					<button onclick="getPrice('Biscuits')"><b>View Price</b></button>
+					<h4 id="Biscuit"></h4>
+				</td>
+				<td>
+					<img src="Buckets and Mugs.jpg">
+					<input type="number" id="Buckets and Mugs" placeholder="Enter Quantity"><br>
+					<button onclick="getPrice('Buckets and Mugs')"><b>View Price</b></button>
+					<h4 id="Buckets"></h4>
+				</td>
+				<td>
+					<img src="Coffee.jpg">
+					<input type="number" id="Coffee" placeholder="Enter Quantity"><br>
+					<button onclick="getPrice('Coffee')"><b>View Price</b></button>
+					<h4 id="Coffeee"></h4>
+				</td>
+				<td>
+					<img src="Dinner Set.jpg">
+					<input type="number" id="Dinner Set" placeholder="Enter Quantity"><br>
+					<button onclick="getPrice('Dinner Set')"><b>View Price</b></button>
+					<h4 id="Set"></h4>
+				</td>
+			</tr>
+			<tr>
+				<td class="glass">
+					<img src="Dreamery.jpg">
+					<input type="number" id="Dreamery" placeholder="Enter Quantity"><br>
+					<button onclick="getPrice('Dreamery')"><b>View Price</b></button>
+					<h4 id="Dreameryy"></h4>
+				</td>
+				<td class="glass">
+					<img src="Foldable Bag.jpg">
+					<input type="number" id="Foldable Bag" placeholder="Enter Quantity"><br>
+					<button onclick="getPrice('Foldable Bag')"><b>View Price</b></button>
+					<h4 id="Bag"></h4>
+				</td>
+				<td>
+					<img src="Glass Lunch Pack.jpg">
+					<input type="number" id="Glass Lunch Pack" placeholder="Enter Quantity"><br>
+					<button onclick="getPrice('Glass Lunch Pack')"><b>View Price</b></button>
+					<h4 id="Lunch Pack"></h4>
+				</td>
+				<td>
+					<img src="Hair Care.jpg">
+					<input type="number" id="Hair Care" placeholder="Enter Quantity"><br>
+					<button onclick="getPrice('Hair Care')"><b>View Price</b></button>
+					<h4 id="Hair"></h4>
+				</td>
+				<td>
+					<img src="Insect Repellent.jpg">
+					<input type="number" id="Insect Repellent" placeholder="Enter Quantity"><br>
+					<button onclick="getPrice('Insect Repellent')"><b>View Price</b></button>
+					<h4 id="Insect"></h4>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="Ketchup and Sauces.jpg">
+				<input type="number" id="Ketchup and Sauces" placeholder="Enter Quantity"><br>
+					<button onclick="getPrice('Ketchup and Sauces')"><b>View Price</b></button>
+					<h4 id="Ketchup"></h4>
+				</td>
+				<td class="glass">
+					<img src="N95 Mask.jpg">
+				<input type="number" id="N95 Mask" placeholder="Enter Quantity"><br>
+					<button onclick="getPrice('N95 Mask')"><b>View Price</b></button>
+					<h4 id="Mask"></h4>
+				</td>
+				<td>
+					<img src="Saffola Gold Oil.jpg">
+					<input type="number" id="Saffola Gold Oil" placeholder="Enter Quantity"><br>
+					<button onclick="getPrice('Saffola Gold Oil')"><b>View Price</b></button>
+					<h4 id="Saffola Gold"></h4>
+				</td>
+				<td class="glass">
+					<img src="Single Bedsheet.jpg">
+					<input type="number" id="Single Bedsheet" placeholder="Enter Quantity"><br>
+					<button onclick="getPrice('Single Bedsheet')"><b>View Price</b></button>
+					<h4 id="Bedsheet"></h4>
+				</td>
+				<td class="glass">
+					<img src="Table Mats and Cover.jpg">
+				<input type="number" id="Table Mats and Cover" placeholder="Enter Quantity"><br>
+					<button onclick="getPrice('Table Mats and Cover')"><b>View Price</b></button>
+					<h4 id="Table Mats"></h4>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="Termoware.jpg">
+					<input type="number" id="Termoware" placeholder="Enter Quantity"><br>
+					<button onclick="getPrice('Termoware')"><b>View Price</b></button>
+					<h4 id="Termo ware"></h4>
+				</td>
+				<td class="glass">
+					<img src="Terra Chips.jpg">
+					<input type="number" id="Terra Chips" placeholder="Enter Quantity"><br>
+					<button onclick="getPrice('Terra Chips')"><b>View Price</b></button>
+					<h4 id="Chips"></h4>
+				</td>
+				<td>
+					<img src="Toys.jpg">
+					<input type="number" id="Toys" placeholder="Enter Quantity"><br>
+					<button onclick="getPrice('Toys')"><b>View Price</b></button>
+					<h4 id="Toy"></h4>
+				</td>
+				<td>
+					<img src="Utensil Cleaner.jpg">
+					<input type="number" id="Utensil Cleaner" placeholder="Enter Quantity"><br>
+					<button onclick="getPrice('Utensil Cleaner')"><b>View Price</b></button>
+					<h4 id="Cleaner"></h4>
+				</td>
+				<td>
+					<img src="Whole Spices.jpg">
+					<input type="number" id="Whole Spices" placeholder="Enter Quantity"><br>
+					<button onclick="getPrice('Whole Spices')"><b>View Price</b></button>
+					<h4 id="Spices"></h4>
+				</td>
+			</tr>
+
+		</table>
+		<footer style="position: fixed;text-align: center; bottom: 2px; font-size: 20px;width: 100%; color: white;">
+			CopyRight.All right reserved 2021
+			
+		</footer>
+			
+		</footer>
+	
+	</body>
+	</html>
